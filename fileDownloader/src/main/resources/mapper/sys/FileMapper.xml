@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.sys.mapper.FileMapper">
+
+    <select id="findFileByURL" parameterType="String" resultType="com.example.sys.entity.File">
+        SELECT * from file where fileUrl = #{fileUrl}
+    </select>
+
+    <select id="getAllFile" resultType="com.example.sys.entity.File">
+        SELECT * from file
+    </select>
+
+    <insert id="insertFile" parameterType="com.example.sys.entity.File">
+        insert into file(fileId, fileUrl, fileName, fileType, fileSize,filePath) values(#{fileId},#{fileUrl},#{fileName},#{fileType},#{fileSize},#{filePath})
+    </insert>
+
+    <delete id="deleteFile">
+        DELETE FROM file WHERE fileUrl = #{url}
+    </delete>
+
+    <delete id="deleteFileInfdm" parameterType="String">
+        DELETE FROM filedownloadmanage WHERE fileUrl = #{url}
+    </delete>
+
+</mapper>

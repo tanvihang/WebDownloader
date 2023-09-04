@@ -1,0 +1,192 @@
+#btn-lang{
+    background-color: beige;
+    color: black;
+    padding: 2px;
+}
+
+.header{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: aliceblue;
+    padding: 1px 2%;
+}
+
+.container{
+    min-height: 92vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3vh;
+
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url("../materials/OIP.jpeg");
+    background-size: 20%;
+    background-position-y: center;
+    background-repeat:space;
+}
+
+.input-container{
+    margin: 5px;
+    border: 2px solid;
+    padding: 10px;
+}
+
+.textbox{
+    border-radius: 10px;
+    width: 100%;
+    height: 3vh;
+}
+
+
+/* dropdown area */
+.dropdown{
+    display: block;
+    padding: 0.2vw;
+}
+
+.dropdown select{
+    background: black;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.dropdown select:hover{
+    cursor: pointer;
+}
+
+.listArea{
+    background-color: aliceblue;
+    border: 1px solid;
+    padding: 0;
+    margin-top: 5px;
+    cursor: pointer;
+    width: 50vw;
+    overflow: hidden;
+}
+
+.listArea li{
+    list-style: none;
+    padding: 20px;
+    line-height: 1;
+    border: 1px solid;
+}
+
+.listArea li button{
+    float: right;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    line-height: 1.5;
+    margin-top: -4px;
+    display: block;
+}
+
+.listArea li button:hover{
+    background-color: aquamarine;
+}
+
+.completeTask{
+    background-color: greenyellow;
+}
+
+.deleteTask{
+    border:1px solid;
+}
+
+.progress-radial{
+    float: left;
+    position: relative;
+    /* border: 2px solid white; */
+    border-radius: 50%;
+    background-color: darkgray;
+    height: 50px;
+    width: 50px;
+    margin: 4px;
+}
+
+.progress-radial-main{
+    background-color: seagreen;
+}
+
+.progress-radial .overlay{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: beige;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.progress-radial-main-10{
+    background: conic-gradient(seagreen 10%, beige 20%);
+}
+.progress-radial-main-20{
+    background: conic-gradient(seagreen 20%, beige 30%);
+}
+.progress-radial-main-30{
+    background: conic-gradient(seagreen 30%, beige 40%);
+}
+.progress-radial-main-40{
+    background: conic-gradient(seagreen 40%, beige 50%);
+}
+.progress-radial-main-50{
+    background: conic-gradient(seagreen 50%, beige 60%);
+}
+.progress-radial-main-60{
+    background: conic-gradient(seagreen 60%, beige 70%);
+}
+.progress-radial-main-70{
+    background: conic-gradient(seagreen 70%, beige 80%);
+}
+.progress-radial-main-80{
+    background: conic-gradient(seagreen 80%, beige 90%);
+}
+.progress-radial-main-90{
+    background: conic-gradient(seagreen 90%, beige 100%);
+}
+.progress-radial-main-100{
+    background: conic-gradient(seagreen 100%, beige 10%);
+}
+
+.progress-10{
+    background: conic-gradient(tomato 10%, beige 20% );
+}
+.progress-20{
+    background: conic-gradient(tomato 20%, beige 30% );
+}
+.progress-30{
+    background: conic-gradient(tomato 30%, beige 40% );
+}
+.progress-40{
+    background: conic-gradient(tomato 40%, beige 50% );
+}
+.progress-50{
+    background: conic-gradient(tomato 50%, beige 60% );
+}
+.progress-60{
+    background: conic-gradient(tomato 60%, beige 70% );
+}
+.progress-70{
+    background: conic-gradient(tomato 70%, beige 80% );
+}
+.progress-80{
+    background: conic-gradient(tomato 80%, beige 90% );
+}
+.progress-90{
+    background: conic-gradient(tomato 90%, beige 100% );
+}
+.progress-100{
+    background: conic-gradient(tomato 100%, beige 10% );
+}

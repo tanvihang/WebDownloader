@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link type="text/css" rel="stylesheet" href="/css/global.css">
+    <link type="text/css" rel="stylesheet" href="/css/index.css">
+
+    <script type="module" src="/js/index.js" defer></script>
+    <script type = "module" src = "/js/utils/file.js?version=1.0.0"></script>
+    <script type = "module" src = "/js/utils/progress.js?version=1.0.0"></script>
+    <script type = "module" src = "/js/utils/language.js?version=1.0.0"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+    <div class="header flex">
+        <p id="headerTitle">Download Manager</p>
+        <p class="btn" id="btn-lang">EN</p>
+    </div>
+
+    <div class="container">
+        <p>https://getsamplefiles.com/download/pdf/sample-1.pdf</p>
+        <p>https://getsamplefiles.com/download/zip/sample-5.zip</p>
+        <p>https://getsamplefiles.com/download/mp3/sample-5.mp3</p>
+        <p>https://getsamplefiles.com/download/mp4/sample-5.mp4</p>
+        <p>https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.5.4/npp.8.5.4.Installer.x64.exe</p>
+        <p>https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe</p>
+
+        <br>
+        <!-- input area -->
+        <div class="input-container flex flex-center flex-column">
+            <p id="box-title">File URL</p>
+            <input type="text" class="textbox" id="newFile" maxlength="200">
+            <p class="btn" id="addFile">Add file</p>
+        </div>
+        
+        <!-- buttons area -->
+        <div class="button-area flex flex-row flex-center">
+            <p class="btn" id="btn-download">Start Download</p>
+            <p class="btn" id="btn-stop">Stop Download</p>
+            <p class="btn" id="btn-resume">Resume Download</p>
+            <div class="dropdown">
+                <select id="downloadspeedselector">
+                    <option value="512">
+                        512 KB/s
+                    </option>
+    
+                    <option value="1024">
+                        1 MB/s
+                    </option>
+    
+                    <option value="2048">
+                        2 MB/s
+                    </option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <select id="threadselector">
+                    <option value="8">
+                        8 Threads
+                    </option>
+
+                    <option value="4">
+                        4 threads
+                    </option>
+
+                    <option value="6">
+                        6 threads
+                    </option>
+
+                    <option value="12">
+                        12 threads
+                    </option>
+                </select>
+            </div>
+            <p class="btn" id="btn-choose-file">Choose file location</p>
+
+        </div>
+
+        <p id="download-progress-text">Download Progression </p>
+        <span id="current-downloading"></span>
+
+        <p id="download-speed-text">Downloading Speed </p>
+        <span id="download-speed"></span>
+        <div class="progress-area" id="progress-area">
+
+        </div>
+
+        <p id="download-list">Download List</p>
+        <!-- download List -->
+        <ul id="toDownloadList" class="listArea">
+
+        </ul>
+
+        <p id="fin-download-list">Finished Download List</p>
+        <!-- finished downloaded List -->
+        <ul id="downloadedList" class="listArea">
+            
+        </ul>
+        
+    </div>
+</body>
+</html>

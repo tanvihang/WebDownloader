@@ -1,0 +1,28 @@
+{
+  "cn" : [{
+    "title" : "下载管理器",
+    "box_title": "文件URL",
+    "add_file_btn" : "添加文件",
+    "start_download_btn": "开始下载",
+    "stop_download_btn": "停止下载",
+    "resume_download_btn": "继续下载",
+    "file_location": "选择文件路径",
+    "download_progress": "下载进度",
+    "download_speed": "下载速度",
+    "download_list": "下载列表",
+    "fin_download_list": "完成下载列表"
+  }],
+  "en" : [{
+    "title" : "Download Manager",
+    "box_title": "File URL",
+    "add_file_btn" : "Add file",
+    "start_download_btn": "Start Download",
+    "stop_download_btn": "Stop Download",
+    "resume_download_btn": "Resume Download",
+    "file_location": "Choose file location",
+    "download_progress": "Download Progression",
+    "download_speed": "Downloading Speed",
+    "download_list": "Download List",
+    "fin_download_list": "Finished Download List"
+  }]
+}
